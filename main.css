@@ -13,6 +13,11 @@ h1{
 #name{
     color:rgb(230, 108, 108);
 }
+#name:hover{
+    transition: all 0.8s ease-in-out;
+    color: rgb(41, 247, 41);
+    letter-spacing: 2px;
+}
 #track{
     margin: 1.5rem;
     font-size: 1.6rem;
