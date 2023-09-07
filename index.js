@@ -1,8 +1,8 @@
 const BgImg = document.querySelector(".bg");
-const time = newDate()
+var time = new Date();
+var currentDate = time.getHours();
 
 BgImg.addEventListener('click',Dialogue);
 function Dialogue(){
-    alert("you just clicked the background")
-    console.log(time);
+    console.log(currentDate);
 }
