@@ -72,10 +72,7 @@ h3{
     color: white;
 }
 @media all and (max-width: 430px) {
-    .content{
-        margin: 3rem;
-        border: 1px solid red;
-    }
+    
     .details{
         /* text-indent: 0; */
         display: flex;
