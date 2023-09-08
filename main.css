@@ -10,26 +10,44 @@ h1{
   font-size: 3rem;
   color: white;  
 }
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.details{
+    /* border: 1px solid red; */
+    padding: 3% 0;
+
+}
 #name{
+    font-size: 4.3rem;
     color:rgb(230, 108, 108);
 }
 #name:hover{
     transition: all 0.8s ease-in-out;
     color: rgb(41, 247, 41);
-    letter-spacing: 2px;
+    letter-spacing: 1.4px;
+}
+h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-size: 2rem; */
+    color: rgb(246, 249, 67);
+    margin-top: 1rem;
 }
 #track{
-    margin: 1.5rem;
+    /* margin: 1.5rem; */
     font-size: 1.6rem;
     color: white;
 }
 .container{
-    padding: 0 7%;
+    padding: 7% 7%;
     background-color: rgb(17, 23, 43);
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
 }
 .image{
     max-width: 90vw;
@@ -37,7 +55,7 @@ h1{
     overflow: hidden;
     object-fit:cover;
     object-position: center;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     border: 5px solid rgb(218, 218, 218);
     background-color: white;
 }
@@ -45,3 +63,59 @@ h1{
     width: 100%;
     height: 100%;
 }
+@media all and (max-width: 430px) {
+    .details{
+        /* text-indent: 0; */
+        display: flex;
+        align-items: flex-start;
+    }
+    .image{
+        min-width: 250px;
+    }
+    .details{
+        min-width: 250px;
+    }
+
+  }
+@media all and (max-width: 770px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+  }
+@media all and (min-width: 1400px) {
+    .content{
+        gap: 2rem;
+    }
+    #track{
+        /* margin: 1.5rem; */
+        font-size: 4rem;
+        color: white;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+    .details{
+        display: flex;
+        justify-content: centent;
+        flex-direction: column;
+    }
+    .image{
+        min-width: 500px;
+    }
+    .content{
+        border: 1px solid white;
+        padding: 2rem;
+        border-radius: 1.5rem;
+    }
+  }
