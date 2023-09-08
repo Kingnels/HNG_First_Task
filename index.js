@@ -4,7 +4,7 @@ var currentime = document.querySelector(".curtime")
 
 var time = new Date();
 var currentDate = time.getHours();
-var curday = time.getDay();
+var curday = time.getUTCDay();
 const utc = time.getUTCHours(); 
 const utcmin = time.getUTCMinutes(); 
 
