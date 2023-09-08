@@ -41,13 +41,13 @@ h3{
     color: white;
 }
 .container{
-    padding: 10% 7%;
+    padding: 7% 10%;
     background-color: rgb(17, 23, 43);
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .image{
     max-width: 90vw;
@@ -72,6 +72,10 @@ h3{
     color: white;
 }
 @media all and (max-width: 430px) {
+    .content{
+        margin: 3rem;
+        border: 1px solid red;
+    }
     .details{
         /* text-indent: 0; */
         display: flex;
