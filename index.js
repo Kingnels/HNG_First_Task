@@ -3,7 +3,6 @@ var day = document.querySelector(".day")
 var currentime = document.querySelector(".curtime")
 
 var time = new Date();
-var currentDate = time.getHours();
 var curday = time.getUTCDay();
 const utc = time.getUTCHours(); 
 const utcmin = time.getUTCMinutes(); 
